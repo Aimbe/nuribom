@@ -1,0 +1,79 @@
+.pw-box {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto 0 auto;
+}
+
+.label {
+  text-align: center;
+  color: #62564e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+#check_pw {
+  width: 125px;
+  height: 25px;
+  padding: 5px;
+  font-size: 1.1rem;
+  border: 1px solid #a49d98;
+}
+
+#check_pw:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+input::-moz-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+input::-o-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+.check-input-box {
+  width: 180px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.submit-btn {
+  padding: 4px 15px;
+  color: white;
+  background-color: #62564e;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.submit-btn:hover {
+  background-color: #b8bd58;
+}
+
+
+.submit-btn:disabled{
+	
+  background-color: #afacac;
+	
+}

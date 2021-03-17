@@ -1,0 +1,634 @@
+/* 센터 디테일 페이지 */
+.main-container {
+    padding-top: 5px;
+    width: 1150px;
+    /* height: 3150px; */
+    font-family: "NanumBarunGothic", sans-serif;
+  }
+  .detail_info_top {
+    height: 450px;
+    /* background-color: whitesmoke; */
+    border-bottom: 1px solid #e2e2e2;
+  }
+  button {
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      cursor: pointer;
+  }
+  .btn_like {
+      position: relative;
+      left: 315px;
+      cursor: auto;
+  }
+  .btn_like .like_count {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 151, 110);
+  }
+
+  .btn_like > i {
+    color:  rgb(235, 206, 152);
+  }
+
+.btn_like > span > i.selectedCt {
+	color: palevioletred;
+} 
+  
+  
+  
+  #res_tit {
+    width: 300px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -2px;
+    /* background-color: red; */
+  }
+  #res_tit:hover {
+    color: rgb(0, 53, 22);
+  }
+  .top_btns {
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+  }
+  div .btn_reserve{
+    display: block;
+    background-color: rgb(122, 129, 71);
+    width: 422px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #e0dddd;
+    font-family: "Recipekorea";
+}
+div .btn_reserve:hover {
+  color: rgb(46, 45, 45);
+  background-color:  rgb(228, 220, 111);
+}
+  .top_info {
+      width: 430px;
+      height: 350px;
+      position: relative;
+      top: -315px;
+      left: 700px;
+      /* text-align: center; */
+      line-height: 25px;
+      border-top: 7px groove #1d1d1d;
+      border-bottom:  7px groove #1d1d1d;
+      padding-bottom: 40px;
+      /* border: 1px solid red; */
+      /* 1px solid #e2e2e2; */
+  }
+  .tags {
+    height: 30px;
+    position: relative;
+    top: -25px;
+    text-align: right;
+  }
+  .center_name span {
+    text-align: right;
+    position: relative;
+  }
+  .center_name {
+      position: relative;
+      top: 25px;
+      line-height: 50px;
+      
+      height: 130px;
+  }
+  .center_name h1 {
+    font-family: "Recipekorea";
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .center_intro {
+     text-align: left;
+      line-height: 30px;
+      position: relative;
+      top: 20px;
+  }
+  span.info_site {
+  	width: 700px;
+  	overflow: hidden;
+  }
+  .center_intro span {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  .top_img {
+      width: 500px;
+      position: relative;
+      top: 30px;
+      left: 70px;
+  }
+  .top_info_wrap {
+    position: relative;
+    left: -65px;
+    top: -10px;
+  }
+  img {
+      width: 500px;
+      height: 360px;
+  }
+
+ span.center_tag::before {
+    content: "#";
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  span.center_tag {
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: whitesmoke;
+    color: #888585;
+    text-align: right;
+    padding-right: 5px;
+    position: relative;
+    top: 10px;
+  }
+ 
+  /* 메인 정보 - 자세히 알아보기*/
+  .info_main {
+      height: 550px;
+      border-bottom: 1px solid #e2e2e2;
+  }
+  
+  div#learn {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 180px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  .top_title {
+    position: relative;
+    top: 20px;
+    left: 300px;
+  }
+  #learn > span{
+    font-size: 40px;
+    position: relative;
+    top: 60px;
+    color: whitesmoke;
+  }
+  #underline {
+    width: 210px;
+    position: relative;
+    top: -70px;
+    left: 145px;
+  }
+  .num_check {
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #aab65d;
+    width: 40px;
+    height: 40px;
+    padding-top: 9px;
+    padding-left: 6px;
+    border-radius: 20px;
+    position: relative;
+    left: 530px;
+    top: 20px;
+    
+  }
+  div.tit {
+    padding-top: 10px;
+    text-align: center;
+    width: 200px;
+    border-top: 1px solid rgb(46, 46, 46);
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: 450px;
+    top: 30px;
+    font-family: "Recipekorea";
+  }
+  .deco_box {
+    border: 4px ridge rgb(121, 119, 119);
+    width: 150px;
+    height: 300px;
+    position: relative;
+    top: 75px;
+    left: 60px;
+    box-shadow: 5px 5px 5px rgb(165, 165, 165);
+  }
+  .deco_tit_first {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: -170px;
+    left: 75px;
+    font-family: "Recipekorea";
+  }
+  .deco_tit_second{
+    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+    top: -150px;
+    left: 90px;
+    font-family: "Recipekorea";
+  }
+  .center_description_wrap {
+    /* background-color: violet; */
+    position: relative;
+    top: -300px;
+    line-height: 20px;
+    width: 750px;
+    left: 260px;
+    /* border: 1px solid lightskyblue; */
+  }
+  p.center_description {
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 40px;
+    text-indent: 22px;
+  }
+  /* 메인 정보 - 프로그램*/
+  #main_programs {
+    background-color:rgba(238, 229, 169, 0.5);
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .program_img {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    box-shadow: 10px 10px 10px gray;
+  }
+  .first_program .program_img {
+    background-repeat: no-repeat;
+    background-size: 300px 180px;
+  }
+  .second_program .program_img {
+    background-repeat: no-repeat;
+    background-size: 300px 180px;
+  }
+  .first_program .program_title {
+    position: relative;
+    top: 120px;
+    left: 550px;
+  }
+  .second_program .program_title {
+    position: relative;
+    top: -105px;
+    left: 550px;
+  }
+  .program_title {
+    background-color: rgba(59, 48, 11, 0.39);
+    width: 400px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .program_title > span{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .program_description {
+    border-top: 1px solid #68500093;
+    text-align: center;
+    width: 370px;
+    line-height: 25px;
+    position: relative;
+    left: 570px;
+    top: -45px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    /* background-color: rgba(245,245,245,0.5); */
+  }
+  .program_description span{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .second_program .program_description {
+    position: relative;
+    top: -90px;
+  }
+  #main_programs .first {
+    position: relative;
+    left: 115px;
+    top: 40px;
+  }
+  #main_programs .second {
+    position: relative;
+    left: 190px;
+    top: 40px;
+  }
+  .program_intro {
+    /* border: 1px solid red; */
+  }
+  .pr_learn {
+    width: 800px;
+  }
+  .program_intro {
+      background-color: rgb(0, 0, 0, 0.5);
+      height: 150px;
+      /* width: 500px; */
+      text-align: center;
+      position: relative;
+      top: 100px;
+  }
+  #pr_learn > span{
+    font-size: 33px;
+    position: relative;
+    top: 30px;
+    color: whitesmoke;
+  }
+  #pr_underline {
+    /* background-color: whitesmoke; */
+    border-top: 1px solid whitesmoke;
+    width: 425px;
+    position: relative;
+    top: 45px;
+    left: 345px;
+  }
+  span.participate {
+    font-size: 20px;
+    color: whitesmoke;
+    position: relative;
+    top: 60px;
+  }
+
+
+  /* 메인 정보 - 지도*/
+  #main_location {
+    height: 550px;
+    background-color: whitesmoke;
+  }
+  #main_location > #map {
+    width: 600px; 
+    height: 350px;
+    position: relative;
+    left: 265px;
+    top: 55px;
+  }
+  #main_location > span {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    left: 300px;
+  }
+
+  /*  메인 정보 - 후기 */
+  #go_total_review {
+    font-size: 15px;
+    background-color:  #aab65d;
+    width: 100px;
+    text-align: center;
+    font-family: "Recipekorea";
+    padding: 3px 0px;
+    border-radius: 6px;
+    position: relative;
+    top: -60px;
+    left: 1000px;
+  }
+  #go_total_review > a {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+  }
+  .review_info {
+    width: 1070px;
+    position: relative;
+    left: 20px;
+    /* border: 1px solid blue; */
+    top: 25px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 5px;
+
+  }
+  .review_info > i {
+    color: rgb(218, 218, 0);
+  }
+  span#avg_rate {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  span#total_review_count {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(155, 144, 144);
+  }
+  .reviews_wrapper {
+    /* border: 1px dotted rgb(184, 184, 55) red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    padding: 35px 20px 5px;
+    /* padding-top: 35px; */
+    /* border: 1px solid red; */
+    /* background-color: white; */
+   
+  }
+  .review_box {
+    /* border: 1px solid blue; */
+    /* width: 400px; */
+    height: 150px;
+    /* padding-bottom: 5px; */
+    border-bottom: 1px solid #e2e2e2;
+    /* background-color: whitesmoke; */
+  }
+
+  span.writer {
+    font-size: 15px;
+    position: relative;
+    left: 52px;
+    top: -25px;
+  }
+  span.written_at {
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+  }
+  .fa-user {
+    position: relative;
+    left: 10px;
+    top: 5px;
+  }
+
+.review_change,
+.review_delete {
+   font-size: 11px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(132, 139, 65);
+  border: 0;
+  outline: 0;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  left: 300px;
+  bottom: 10px;
+  
+}
+
+
+  .comment {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  .comment p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .paging {
+    /* border: 1px solid yellow; */
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .paging a i{
+    color: rgb(116, 116, 116);
+  }
+
+  /* 영역 체크하자!!! 늘어나기...? */
+  div#review_board_bottom {
+    padding-top: 20px;
+    text-align: center;
+    /* border: 1px solid red; */
+    /* height: 600px; */
+  }
+  span#question {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 140px;
+  }
+  span#recommend {
+    font-size: 13px;
+    /* font-weight: bold; */
+    color: rgb(112, 112, 112);
+    position: relative;
+    right: 135px;
+  }
+  div#rate {
+    position: relative;
+    left: 200px;
+    padding-bottom: 5px;
+  }
+  span#tit {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #star_1,
+  #star_2,
+  #star_3 {
+    color:  rgb(184, 184, 55);
+  }
+  .fa-star {
+    color: rgb(92, 86, 86);
+  }
+  textarea {
+    width: 600px;
+    height: 150px;
+    font-size: 14px;
+    padding: 10px 10px;
+    resize: none;
+  }
+  textarea::placeholder {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    border: 0;
+    outline: 0;
+   
+  }
+  #register_review {
+    position: relative;
+    top: -15px;
+    left: 15px;
+  }
+  .board {
+    padding-bottom: 40px;
+    /* padding-top: 20px; */
+  }
+  .reviewSubmit {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(132, 139, 65);
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  /* 디테일페이지의 사이드바 */
+  #detail-side-fix-btn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 550px;
+    right: 120px;
+  }
+  .detail-side-btn {
+    width: 100px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #adaaaa;
+    margin: 1px;
+  }
+  .detail-side-btn:hover {
+    border: 2px solid #837100;
+  }
+  .detail-side-btn > a{ 
+    font-size: 14px;
+    color: rgb(58, 54, 54);
+    font-weight: bold;
+  }
+  .detail-side-btn > a:hover{
+    color: #99870f;
+    font-size: 15px;
+  } 
+  .btn-bottom i{
+    position: relative;
+    top: -14px;
+  }
+
+a {
+  color: #c7c724;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:hover {
+  color: #798145;
+}
+span#check_site {
+/* 	border: 1px solid red; */
+	width: 410px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+  .btn_like .like_count {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(173, 151, 110);
+  }

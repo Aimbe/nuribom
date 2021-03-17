@@ -1,0 +1,270 @@
+.assistance-detail-top {
+  width: inherit;
+  height: 80px;
+  text-align: center;
+}
+
+.assistance-detail-info > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.assistance-detail-top h2 {
+  font-size: 2.6rem;
+  color: #62564e;
+}
+
+.assistance-detail-info > ul > li {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #74675d;
+  padding-top: 30px;
+  display: inline-block;
+}
+.assistance-detail-info > ul > li:nth-child(2) {
+  width: 760px;
+  text-align: right;
+}
+
+.assistance-detail-info > ul > li:last-child {
+  padding-right: 30px;
+}
+
+.detail-content {
+  text-align: center;
+  color: #62564e;
+  padding: 40px 35px 30px 35px;
+}
+
+/*그냥 더미 기능 구현할 때 지우기*/
+.dummy-h5 {
+  font-size: 2rem;
+  padding-top: 15px;
+}
+
+.dummy-p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.dummy-h6 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.dummy-img {
+  margin: 15px 0;
+}
+
+.assistance-detail-bottom {
+  padding: 15px 35px;
+  margin-top: 20px;
+}
+
+.assistance-user-reply {
+  min-height: 30px;
+}
+
+.assistance-detail-reply {
+  height: 130px;
+}
+
+.ass-reply-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #62564e;
+}
+
+.ass-reply-size {
+  font-size: 1.6rem;
+  color: #b8bd58;
+  font-weight: 700;
+}
+
+/*업데이트시*/
+.reply-update-form {
+  margin: 20px 0;
+  padding: 10px 10px;
+  background-color: #f7f2e1;
+  display: none;
+}
+
+.ass-reply-update-username {
+  color: #62564e;
+  font-size: 1.2rem;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.assistance-user-reply {
+  padding: 10px;
+}
+.assistance-user-reply > h5 {
+  display: inline;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #62564e;
+}
+
+h5.ass-reply-userdate {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.ass-reply-update {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.ass-reply-update > li {
+  display: inline;
+}
+
+.ass-reply-update > li:nth-child(2) {
+  margin-left: 2px;
+}
+
+.ass-reply-update li > a {
+  color: #62564e;
+}
+
+.ass-reply-content {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #62564e;
+  line-height: 2.2rem;
+}
+
+textarea#assistance-reply-textarea {
+  width: 830px;
+  height: 100px;
+  border: 1px solid #d0cece;
+  resize: none;
+  color: #62564e;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+textarea#assistance-reply-textarea:focus {
+  outline: none;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #b8b1b1;
+}
+textarea::-moz-input-placeholder {
+  color: #b8b1b1;
+}
+textarea::-o-input-placeholder {
+  color: #b8b1b1;
+}
+textarea::-ms-input-placeholder {
+  color: #b8b1b1;
+}
+
+.ass-reply-send {
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+  top: -9px;
+  left: 2px;
+  color: white;
+  background-color: #62564e;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.ass-reply-send:focus {
+  outline: none;
+}
+
+.ass-reply-send:hover {
+  background-color: #b8bd58;
+}
+
+.ass-detail-list {
+  height: 130px;
+}
+
+.ass-detail-list > ul > li {
+  display: block;
+  width: 910px;
+  height: 40px;
+  padding-top: 12px;
+  margin: 0 auto;
+}
+
+.ass-detail-list > ul > li:first-child {
+  border-top: 1px solid #b8b1b1;
+  border-bottom: 1px solid #b8b1b1;
+}
+
+.ass-detail-list > ul > li:last-child {
+  border-bottom: 1px solid #b8b1b1;
+}
+
+.ass-detail-list > ul > li > a {
+  color: #62564e;
+  font-size: 1.4rem;
+}
+
+.ass-detail-list > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.ass-detail-list > ul > li > i {
+  color: #62564e;
+  margin-right: 10px;
+}
+
+.ass-allList-page-go {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-left: 32px;
+  color: white;
+  background-color: #62564e;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ass-allList-page-go:focus {
+  outline: none;
+}
+
+.update-btn-box {
+  margin-top: 10px;
+  padding-top: 10px;
+  height: 40px;
+}
+
+.go-update-register,
+.delete-btn {
+  text-align: right;
+}
+
+.update-register,
+.delete-btn {
+  display: inline-block;
+  padding: 6px 20px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: #62564e;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+
+.update-register:focus,
+.delete-btn:focus {
+  outline: none;
+}
+.delete-btn {
+  margin-right: 30px;
+}

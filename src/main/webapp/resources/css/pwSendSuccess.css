@@ -1,0 +1,73 @@
+div{
+
+    border:1px solid transparent;
+    
+}
+
+
+
+.searchPw{
+    margin-top: 100px;
+    text-align: center;
+    width: 500px;
+    
+    
+}
+
+
+
+.searchPw > h1 {
+    font-size: 4.0rem;
+    color: #685547;
+}
+
+.searchPw > h2 {
+    font-size: 2.0rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #685547;
+}
+
+.successMsg{
+    border-top: 1px solid black;
+    padding-top: 40px;
+}
+
+.successMsg > h3{
+    font-size: 1.7rem;  
+    
+    color: #685547; 
+    margin-bottom: 30px;
+}
+
+.go_login {
+    float: left;
+
+
+}
+.go_home {
+    float: right;
+}
+
+
+
+.go_login > input, .go_home > input{
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #685547; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #e9e6db;
+    font-size: 1.5rem;
+    font-style: bold;
+    border-color: transparent;
+}
+
+.go_login > input:hover, .go_home > input:hover{
+    color: #685547;
+    background-color: #fde982;;
+  
+}
+
+

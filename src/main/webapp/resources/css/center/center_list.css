@@ -1,0 +1,505 @@
+/* 코드라 볼드체 */
+@font-face {
+  font-family: 'KOTRA_BOLD-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메인 _센터리스트 */
+
+.main-container {
+  padding-top: 5px;
+  width: 1150px;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.clist_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-bottom: 1px solid #e6e6e6;
+  /* border: 1px solid blue; */
+  position: relative;
+  left: -20px;
+  margin-top: 60px;
+}
+.clist_box {
+  width: 590px;
+  height: 360px;
+  position: relative;
+  padding: 0px 98px 50px 0px;
+  overflow: hidden;
+}
+
+.btn_like {
+  border: transparent;
+  position: relative;
+  top: 296px;
+  padding-left: 10px;
+  z-index: 1;
+  background-color: transparent; 
+}
+.btn_like > span > i {
+  color: rgb(235, 206, 152);
+}
+.btn_like > span > i:hover {
+  color: palevioletred;
+}
+.btn_like > span > i.selectedCt {
+	color: palevioletred;
+} 
+
+
+img {
+  width: 365px;
+  height: 245px;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+}
+input {
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font-size: 14px;
+}
+input::placeholder {
+  opacity: 0.5;
+  font-size: 12px;
+}
+.clist_info_top {
+  position: relative;
+  text-align: right;
+  left: 90px;
+  top: 5px;
+  line-height: 2.5em;
+  padding-right: 5px;
+}
+.clist_info_top h1 {
+  cursor: pointer;
+}
+.info_bottom_wrapper {
+  position: relative;
+  top: -80px;
+}
+.clist_info_bottom {
+
+  position: relative;
+  text-align: right;
+  left: 90px;
+  top: 70px;
+  padding-right: 5px;
+}
+p.info_detail {
+  cursor: pointer;
+  position: relative;
+  top: 120px;
+}
+p.info_detail > span {
+  font-size: 1.4rem;
+  line-height: 2.0em;
+}
+
+.btn_reserve {
+  position: relative;
+  top: 155px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  font-family: "Recipekorea";
+}
+.btn_reserve:hover {
+  cursor: pointer;
+  color: rgb(214, 203, 41);;
+  border-bottom-color: rgb(214, 203, 41);
+}
+.cname {
+  /* border: 1px solid red; */
+  /* width: 600px; */
+}
+.cname > span {
+  font-size: 1.4rem;
+}
+#cname {
+  font-size: 2.8rem;
+  font-family: "Recipekorea";
+}
+
+.paging {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+/* rgb(172, 172, 172); */
+.paging i {
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: rgb(99, 99, 99);
+}
+.paging i:hover {
+  font-weight: bold;
+  color:rgb(214, 203, 41);
+}
+i.selected {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+}
+.keyword {
+  padding-bottom: 5px;
+}
+.keyword span {
+  font-size: 15px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.search_btn_wrapper {
+  position: relative;
+  top: 90px;
+}
+.btn_search{
+    display: block;
+    background-color: rgba(161, 172, 89);
+    width: 180px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    border-radius: 100px;
+    position: relative;
+    left: 485px;
+    border: 1px solid #e0dddd;
+    font-family: "RecipeKorea";
+}
+.btn_search:hover{
+  color: rgb(46, 45, 45);
+  background-color:  rgb(228, 220, 111);
+}
+.btn_search i {
+  padding-left: 6px;
+}
+.filter_area {
+  display: inline;
+  position: relative;
+  top: -35px;
+}
+.filter_area li button:hover{
+  font-weight: bold;
+  color: rgb(182, 174, 68);
+  /* font-size: 13px; */
+}
+
+.sel_place ul{
+  display: inline;
+}
+.sel_place li {
+  list-style: none;
+  display: inline;
+}
+
+.sel_place li::after {
+  margin-left: 3px;
+  margin-right: 3px;
+  content: url(../../images/list-type.png);
+}
+.sel_place li:last-child::after {
+  content: "";
+}
+.sel_place li button {
+  font-size: 12px;
+}
+.korea {
+  display: inline;
+  font-size: 14px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+li .selected {
+  font-weight: bold;
+}
+.btn_reset {
+  /* content: url("../images/reload.png"); */
+  position: relative;
+  top: -97px;
+  text-align: right;
+  left: 1088px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.btn_reset:hover {
+  color:rgb(214, 203, 41);
+}
+.btn_layer {
+  border: 1px solid #e0dddd;
+  border-radius: 5px;
+  width: 200px;
+  line-height: 36px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 15px 0 12px;
+  margin-right: 8px;
+  overflow: hidden;
+  display: inline;
+  background-color:rgb(252, 252, 252);;
+}
+.btn_layer i {
+  padding-left: 20px;
+}
+.btn_layer button {
+  font-size: 14px;
+}
+
+.show_select_box {
+  display: none;
+  background-color: rgb(252, 252, 252);
+  width: 200px;
+  padding: 30px;
+  border: 1px solid #e4e4e4;
+  z-index: 10;
+  border-radius: 5px;
+  position: absolute;
+  top: 48px;
+}
+.show_theme {
+  left: 150px;
+}
+.show_filter {
+  left: 280px;
+}
+.row {
+  border-bottom: 1px solid #e6e6e6;
+}
+.title {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+  font-weight: 700;
+}
+.btn_close_category
+.btn_close_theme
+.btn_close_filter{
+  position: relative;
+  top: -12px;
+  left: 120px;
+  cursor: pointer;
+}
+.select_box > button > i {
+  cursor: pointer;
+  color: gray;
+  -webkit-text-stroke: 2px white;
+  position: relative;
+  top: -12px;
+  left: 120px;
+  z-index: 2;
+}
+
+.btn_search_apply {
+  background-color: rgba(161, 172, 89);
+  color: white;
+  width: 70px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 100px;
+  position: relative;
+  top: -20px;
+  left: 30px;
+}
+.check_list {
+  text-align: right;
+}
+.check_list > li> label {
+  font-size: 14px;
+  line-height: 24px;
+}
+.check_list > li> label:hover {
+  font-weight: bold;
+}
+
+.checkbox {
+  margin-left: 20px;
+}
+.btn_layer > button {
+  border: 0;
+}
+.input_keyword {
+  border: 1px solid #e4e4e4;
+  width: 300px;
+  height: 20px;
+}
+.sel_place > ul > li.selected {
+  font-weight: bold;
+}
+ul.check_list > label.selected {
+  font-weight: bolder;
+}
+.filter > ul > li {
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+  color: black;
+}
+.check_list > li.filter_items {
+  cursor: pointer;
+}
+.check_list > li.filter_items:hover {
+  background-color:  rgba(161, 172, 89);
+  color: white;
+  font-weight: bold;
+}
+.check_list > li.selected {
+  background-color:  rgba(161, 172, 89);
+  color: white;
+  font-weight: bold;
+}
+
+
+.show_theme {
+  left: 523px;
+}
+.show_filter {
+  left: 652px;
+}
+.sel_place {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+.check_list > li > label.selected {
+  font-weight: bold;
+}
+span.center_tag::before {
+  content: "#";
+  font-weight: bold;
+  color: rgb(83, 83, 83);
+  margin-right: 3px;
+}
+span.center_tag {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 6px;
+  font-size: 12px;
+  background-color: whitesmoke;
+  color: #888585;
+}
+
+
+/* 페이징 */
+.user-center-list-page {
+  width: 980px;
+  height: 30px;
+  margin: 25px auto 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.page-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a49d98;
+  background-color: transparent;
+  font-weight: bold;
+  color: #62564e;
+  cursor: pointer;
+  font-size: 12px;
+}
+.page-icon {
+  color: #62564e;
+}
+.page-btn:focus {
+  outline: none;
+}
+
+.page-btn:hover {
+  background-color: #e9e6db;
+  color: #62564e;
+}
+
+.user-sel-page {
+  background-color: #a49d98;
+  color: white;
+}
+
+/* 검색조건 */
+.filter_options {
+  padding-top: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  top: -55px;
+}
+
+
+#category_wrapper,
+#tag_wrapper,
+#filter_wrapper {
+  display: inline;
+  /* border: 1px solid cyan; */
+  /* margin: 10px  */
+  padding-bottom: 10px;
+  position: relative;
+  left: -20px;
+  margin-left: 20px;
+  top: -5px;
+  
+}
+select {
+  font-size: 12px;
+  width: 150px;
+  font-weight: bold;
+  padding: 3px 0px 3px 5px;
+}
+
+option.selected {
+  font-weight: bold;
+}
+
+option {
+  font-size: 12px;
+  padding: 20px 2px 2px 2px;
+}
+
+#applicate1,
+#applicate2,
+#applicate3 {
+  /* border: 1px solid blue; */
+  background-color:  rgb(157, 165, 104);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 11px;
+  color: whitesmoke;
+  padding: 2px;
+}
+
+#no_result {
+	height: 500px;
+	text-align: center;
+	padding-top: 200px;
+	font-size: 28px;
+	font-family: "RecipeKorea";
+	color: gray;
+	background-color: whitesmoke;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

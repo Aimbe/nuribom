@@ -1,0 +1,136 @@
+@charset "UTF-8";
+div{
+border:1px solid pink;
+/*    border: 1px solid transparent;*/
+}
+
+.reserve{
+ 	text-align:center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.img-container{
+	text-align:center;
+}
+
+.fts1 { font-size: xx-small; }
+.fts2 { font-size: x-small; }
+.fts3 { font-size: small; }
+.fts4 { font-size: medium; }
+.fts5 { font-size: large; }
+.fts6 { font-size: x-large; }
+.fts7 { font-size: xx-large; }
+
+.bottomspace{
+    margin-bottom: 15px;
+}
+
+.reserve_form_div{
+    width: 100%;
+}
+.reserve_form_table{
+    width: 100%;
+}
+.reserve_form_table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.td_reserve_menual{
+    padding-left: 400px;
+    font-size: large;
+}
+
+input[type="text"] {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+}
+.reserve_time_combo {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+}
+.reserve_time_combo option{
+    font-size: medium;
+}
+
+.reserve_top_hr{
+    width: 700px;
+    margin: 0 auto;
+ border: 0;
+    height: 3px;
+    background: darkgray;
+    
+}
+input[type="text"] {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+}
+input[type="email"] {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+}
+input[type="date"] {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+    font-style: '맑은고딕체';
+}
+input[type="button"]#reserveAction {
+    height: auto; /* 높이 초기화 */ 
+    line-height: normal; /* line-height 초기화 */ 
+    padding: .5em .5em; /* 여백 설정 */ 
+    font-size: large;
+    font-style: '맑은고딕체';
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 580px;
+    background-color: darkgray  ;    
+    color: white;
+}
+.reserve_form_textarea{
+    font-size: large;
+}
+.td_reserve_menual_plus{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.reserve_center_name{
+    font-size: 2.0em;
+        font-family: "Recipekorea";
+}
+
+
+
+
+
+
+
+
+
+input:focus {
+ outline:0 solid black;  
+}
+textarea:focus {
+  outline: 0 solid black;  
+}
+input:focus-within {
+    outline: 0 solid black; 
+}
+
+textarea:focus-within {
+  outline: 0 solid black;  
+}
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px white inset;
+    outline: 0 solid black;  
+}

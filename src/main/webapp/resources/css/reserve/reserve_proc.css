@@ -1,0 +1,113 @@
+@charset "UTF-8";
+div{
+/*border:1px solid pink;*/
+    border: 1px solid transparent;
+}
+
+.reserve_proc_title{
+ 	text-align:center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reserve_proc_title_msg{
+    font-size: 3.8em;;
+    padding-bottom: 25px;
+}
+.reserve_proc_title_submsg{
+    font-size: 2.3em;
+}
+.goMyReserve{
+	
+ height: auto; 
+  line-height: normal;  
+    padding: .5em .5em; 
+    font-size: 1.8em;
+    font-style: '맑은고딕체';
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color:   rgba(161, 182, 89, 80%);
+    color: white;
+    border-radius: 2em;
+    width: 150px;
+    height: 40px;
+    border: 0 solid black;
+    font-weight: 500;
+    
+}
+.reserve_proc_hr{
+     width: 900px;
+    margin: 0 auto;
+    border: 0;
+    height: 2.5px;
+    margin-bottom: 15px;
+    background: darkgray;
+}
+.reserve_center{
+    display: inline-block;
+    vertical-align: middle;
+margin-top: 30px;
+    
+}
+.reserve_proc_center_image{
+    margin-left: 220px;
+      vertical-align: middle;
+}
+.reserve_proc_center_image_picture{
+    opacity: 85%;
+    border-radius: 2em;
+}
+.reserve_proce_center_text{
+      vertical-align: middle;
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+    
+}
+.reserve_proc_span_name{
+    margin-top: 25px;
+    margin-bottom: 10px;
+font-size: 3.5em;
+    
+}
+.reserve_proc_span_address
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+font-size: 2.2em;
+    
+}
+.reserve_proc_span_day{
+    font-size: 2.0em;
+    margin-top: 20px;
+        margin-bottom: 10px;
+    
+}
+.reserve_proc_span_time{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2.0em;
+}
+.reserve_proc_span_tell{
+       margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2.0em;
+}
+input[type="button"]#search_category_center_btn {
+    height: auto; 
+  line-height: normal;  
+    padding: .5em .5em; 
+    font-size: 2.4em;
+    font-style: '맑은고딕체';
+    margin-top: 80px;
+    margin-bottom: 300px;
+    margin-left: 530px;
+    background-color:   rgba(161, 182, 89, 80%);
+    color: white;
+    border-radius: 2em;
+    width: 250px;
+    height: 100px;
+    border: 0 solid black;
+    font-weight: 800;
+}

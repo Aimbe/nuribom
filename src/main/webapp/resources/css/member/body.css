@@ -1,0 +1,178 @@
+
+
+.btn_box {
+    float: right;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+
+    height: 70px;
+    border: 1px solid transparent;
+    line-height: 40px;
+
+
+}
+
+
+.alarm_box {
+    min-height: 80px;
+    padding-bottom: 20px;
+}
+.time_line {
+    padding: 25px 25px 25px 20px;
+}
+
+/* div {
+    display: block;
+} */
+
+.btn_delete,.btn_setting {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #62564e;
+}
+
+
+
+
+.tx_box {
+    position: relative;
+    min-height: 72px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    border-top-color: #c3afaf;
+    border-radius: 8px;
+    width: 950px;
+}
+.time_line .daily_box {
+    padding-top: 0;
+}
+
+.time_line .daily_box h4 {
+    height: 33px;
+    background: url(https://ssl.pstatic.net/static/me/new/ico_time.png) no-repeat;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+    font-family: dotum;
+    line-height: 33px;
+}
+
+.select_btn {
+
+    border-radius: 20px;
+    background: white;
+    color :whitesmoke;
+    
+}
+
+.performer_id{
+
+    font-size :1.0em;
+    color :lightslategrey;
+}
+
+
+.select_btn :hover{
+
+    background :bisque;
+    color :white;
+
+}
+.fa-pencil-alt{
+
+    color :chocolate;
+
+}
+.fa-comments{
+
+    color :#1a0dab;
+}
+
+.fa-clinic-medical{
+
+    color:thistle;
+}
+
+.fa-heart-made{
+
+    color : #D6001C;
+}
+
+.title_alarm{
+
+    font-size : medium;
+    color :black;
+}
+.jbox{
+    border-radius: 8px;
+    background-color: #f8f7e6;
+    width: 950px;
+    height: 80px;
+    border: 1px solid #c3afaf;
+    border-top-color: #c3afaf;
+    
+}
+.group1{
+    vertical-align: middle;
+    display: inline-block;
+ 
+    
+}
+.cr12{
+      width:50px;
+    height: 50px;
+    margin-right: 30px;
+}
+.del_all{
+    display: inline-block;
+    padding: 4px 20px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #62564e;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+
+.user-board-register {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #62564e;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+.alarm_time{
+
+    display: block;
+
+}
+.delete_btn{
+
+    position: absolute;
+    
+}
+.del_btn{
+
+    /* position: absolute; right: 320px;  */
+    float : right;
+    font-size: medium;
+    font: #c3afaf;
+    top :580px;
+    height: 30px;
+    background-color: #f8f7e6;
+    border :transparent;
+}

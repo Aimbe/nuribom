@@ -1,0 +1,44 @@
+package com.nuriweb.mybom.model.dao.inf;
+
+import java.util.List;
+
+import com.nuriweb.mybom.model.vo.ReviewVO;
+
+public interface IReviewDAO {
+
+	//전체 리뷰를 조회할 수 있다.
+	List<ReviewVO> selectAllReview();
+	List<ReviewVO> selectAllReviewPage(int ofset,int limit);
+	
+	//상담소디테일 페이지에서 해당 상담소의 리뷰를 조회할 수 있다.
+	List<ReviewVO> selectAllReviewByCenter(int ctId);
+	
+	//리뷰 수정,삭제 개별 선택
+	// 리뷰 id로 해당리뷰정보를 받을수있다.
+	ReviewVO selectOneReview(int id);
+	
+	//상담소디테일 페이지에서 예약을 했던 회원이 상담소 리뷰를 작성할 수 있다.
+	boolean insertOneReview(ReviewVO rv);
+	boolean insertOneReview(int mbId, int ctId, int rsId, int rate, String userName, String content);
+	
+	//해당 리뷰를 작성한 회원은 마이페이지에서 리뷰를 수정할 수 있다.
+	boolean updateOneReview(ReviewVO rv);
+	boolean updateOneReview(int id,int rate,String content);
+	boolean updateOneReviewByUserName(int mbId,String userName);
+	
+	//해당 리뷰를 작성한 회원은 마이페이지에서 리뷰를 삭제할 수 있다.
+	boolean deleteOneReview(int id);
+	 boolean deleteOneReviewRS(int rsId);
+	 
+	//한 회원의 리뷰리스트를 조회할수있다.
+	List<ReviewVO> getListByMember(int mbId);
+	List<ReviewVO> selectCenterReviewPage(int ctId, int ofset, int limit);
+	
+	int checkAllReviewCount(); // 전체 조회, 검색 조회, + 페이지, 날자범위...
+	int checkCenterReviewCount(int ctId);
+	
+	int checkAllMemberCount(int mbId); // 전체 조회, 검색 조회, + 페이지, 날자범위...
+	List<ReviewVO> getListByMemberPage(int mbId, int ofset, int limit);
+	
+	
+}

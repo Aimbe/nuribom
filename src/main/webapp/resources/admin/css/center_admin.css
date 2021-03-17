@@ -1,0 +1,234 @@
+#center_title {
+    border: 1px solid blue;
+}
+#btns button {
+   
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+#btns button:hover {
+    color: black;
+    background-color: rgb(230, 231, 129);
+}
+#btns button a {
+    color: white;
+    text-decoration: none;
+}
+#btns button a:hover {
+    color: black;
+}
+
+#btns {
+    position: relative;
+    top: -20px;
+    left: 1230px;
+    width: 120px;
+    text-align: center;
+    display: inline;
+}
+#btn_register {
+ background-color: #929c4f;
+}
+
+.type10 {
+    border: transparent;
+    table-layout: fixed;
+    width: 1350px;
+}
+.type10 > th#id {
+    width: 20px;
+}
+
+th label:before {
+    content: "\00a0 ";
+}
+.ct_title {
+    /* border: 1px solid red; */
+    padding-bottom: 8px;
+    width: 500px;
+    border-bottom: 1px solid #b1b1b1;    
+}
+.keyword {
+    height: 30px;
+    width: 400px;
+    border: 1px solid  #bbca5b;
+    background-color: white;
+    /* border: 1px solid red; */
+    position: relative;
+    left: 400px;
+    top: 20px;
+  }
+.keyword > input {
+    font-size: 15px;
+    width: 325px;
+    pad: 10px;
+    border: 0;
+    outline: none;
+    float: left;
+    text-align: center;
+}
+.keyword > input::placeholder {
+    font-size: 15px;
+    padding-top: 5px;
+}
+.keyword #btn_search {
+    width: 50px;
+    height: 28px;
+    border: 0px;
+    background-color: #bbca5b;
+    outline: none;
+    float: right;
+    color: white;
+    font-weight: bold;
+}
+.keyword #btn_search:hover {
+    color: black;
+    background-color: rgb(230, 231, 129); 
+}
+th .det_addr {
+    width: 50px;
+}
+#center_table td {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break:break-all;
+/*     white-space: nowrap; */
+}
+
+/* 페이징 */
+.admin-center-list-page {
+  width: 980px;
+  height: 30px;
+  margin: 25px auto 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.page-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a49d98;
+  background-color: transparent;
+  font-weight: bold;
+  color: #62564e;
+  cursor: pointer;
+  font-size: 12px;
+}
+.page-icon {
+  color: #62564e;
+}
+.page-btn:focus {
+  outline: none;
+}
+
+.page-btn:hover {
+  background-color: #e9e6db;
+  color: #62564e;
+}
+
+.admin-sel-page {
+  background-color: #a49d98;
+  color: white;
+}
+
+#no {
+	width: 50px;
+}
+th#id {
+	width: 100px;
+	font-weight: bold;
+	padding-left: 10px;
+	text-align: center;
+}
+#category {
+	width: 170px;
+}
+#name {
+	width: 330px;
+	font-weight: bold;
+}
+#region {
+	width: 215px;
+}
+#tel {
+	width: 180px;
+}
+#site {
+	width: 250px;
+}
+#created_at {
+	width: 150px;
+}
+tr:hover {
+	color: #b9bb65;
+}
+#btn_col {
+	width: 180px;
+}
+tr td {
+    border-bottom: 1px solid rgb(221, 223, 223);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+tr td.center_list_number {
+	font-style: oblique; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #575e2f;
+}
+tr td.center_id {
+	text-align: center;
+	font-weight: bold;	
+}
+
+
+tr td.center_name {
+	font-weight: bold;
+/* 	color: #383d18; */
+}
+td#center_id {
+	border: 1px solid red;
+}
+
+
+#btn_edit,
+#btn_delete,
+#btn_detail {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(132, 139, 65);
+  border: 0;
+  outline: 0;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+#btn_edit:hover,
+#btn_delete:hover,
+#btn_detail:hover {
+	color: black;
+    background-color: rgb(230, 231, 129);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

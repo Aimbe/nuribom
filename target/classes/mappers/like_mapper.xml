@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ILikeDAO">
+			<!-- 보통 인터페이스 이름입력 -->
+
+	<!-- no PK return -->
+	<insert id="likeAdd" parameterType="likeVO">
+		<![CDATA[
+			INSERT INTO LIKES(member_id, center_id) values(#{memberId},#{centerId})
+ 		]]>	 
+	</insert>
+	
+	<!-- PK return -->
+	<insert id="likeAddReturnKey" parameterType="likeVO" keyProperty="id" useGeneratedKeys="true">
+		<![CDATA[
+			INSERT INTO LIKES(member_id, center_id) values(#{memberId},#{centerId})
+ 		]]>	 
+	</insert>
+	
+	
+	<delete id="likeDelete" parameterType="likeVO">
+		<![CDATA[
+			DELETE from LIKES WHERE member_id = #{memberId} and center_id = #{centerId}
+		]]>
+	</delete>
+	
+	<select id="aleadyExistedLike" resultType="likeVO" parameterType="likeVO">
+		<![CDATA[
+			SELECT * from LIKES WHERE member_id = #{memberId} and center_id = #{centerId} 
+		]]>
+	</select>
+	
+	
+	
+	<select id="selectAllLikeList" resultType="likeVO">
+		<![CDATA[
+			SELECT * from LIKES order by pushed_at desc
+		]]>
+	</select>
+	
+	<select id="selectAllLikeListOfOneCenter" resultType="likeVO" parameterType="int">
+		<![CDATA[
+			SELECT * from LIKES WHERE center_id = #{ctId} order by pushed_at desc
+		]]>
+	</select>
+	
+	<select id="selectAllLikeListOfOneMember" resultType="likeVO" parameterType="int">
+		<![CDATA[
+			SELECT * from LIKES WHERE member_id = #{mbId} order by pushed_at desc
+		]]>
+	</select>
+	
+	
+	<select id="getLikeCountOfOneCenter" parameterType="int" resultType="int">
+		<![CDATA[
+			SELECT COUNT(*) from LIKES WHERE center_id = #{ctId}
+		]]>
+	</select>
+	
+	
+	<select id="getLikeCountOfOneMember" parameterType="int" resultType="int">
+		<![CDATA[
+			SELECT COUNT(*) from LIKES WHERE member_id = #{mbId}
+		]]>
+	</select>
+	
+	
+	<select id="selectAllLikeListOfOneMemberPG" parameterType="int" resultType="likeVO">
+		<![CDATA[
+			SELECT * from likes where member_id = #{mbId} order by pushed_at desc 
+		]]>
+	</select>
+	
+	
+<!-- 		<select id="selectAllLikeListOfOneMemberPG" parameterType="int" resultType="likeVO"> -->
+<!-- 		<![CDATA[ -->
+<!-- 			SELECT * from likes where member_id = #{mbId} order by pushed_at desc limit #{limit} offset #{offset} -->
+<!-- 		]]> -->
+<!-- 	</select> -->
+	
+	
+	
+<!-- 		<select id="selectAllLikeListOfOneMemberPG" parameterType="int" resultType="likeVO"> -->
+<!-- 		<![CDATA[ -->
+<!-- 			SELECT * from LIKES WHERE member_id = #{mbId} order by pushed_at desc -->
+<!-- 		]]> -->
+<!-- 	</select> -->
+	
+	
+	
+	
+	
+<!-- CRUD -->
+<!-- <insert id="" ></insert> -->
+<!-- <select id="" ></select> -->
+<!-- <update id="" ></update> -->
+<!-- <delete id="" ></delete> -->
+
+</mapper>

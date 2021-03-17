@@ -1,0 +1,156 @@
+/* div {
+  border: 1px dotted red;
+} */
+
+.real-content {
+    
+    padding-top: 10px;
+    
+}
+
+.reserve-div{
+    margin-top: 20px;
+    margin-left: 80px;
+    
+    width: 800px;
+    height: 315px;
+    background-color: #f5edd3;;
+    padding: 20px 50px 30px 50px;
+}
+
+.reserve-cancel{
+    float: right;
+}
+
+.reserve-cancel > button{
+    display: inline-block;
+    padding: 10px 25px;
+    color: #f5edd3;
+    font-size: 1.2rem;
+    background-color: #62564e;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.reserve-cancel > button:hover{
+    color:  #62564e;
+    background-color:#fde982;
+   
+}
+
+.is-done{
+   font-size: 1.3rem;
+   font-style: italic;
+    color: #4e4035;
+}
+.center-title{
+    display: block;
+    margin-top: 10px;
+   
+
+}
+.center-title h3{
+    color: #4e4035;
+    font-size: 2.3rem;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    display: inline;
+}
+
+.center-info {
+    display: inline;
+    margin-top: 15px;
+    height: 200px;
+}
+
+.reserve-info{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.bottom-btn{
+    margin-top: 15px;
+
+}
+
+
+.go-center-pg{
+    background-color: transparent;
+    color:  #61554d;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: 2px solid  #62564e;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-top: 10px;
+    width: 700px;
+}
+
+.go-center-pg:hover{
+    color:  #62564e;
+    background-color:#fde982;
+   
+}
+
+.go-review {
+    display: inline-block;
+    padding: 10px 25px;
+    color:  #f5edd3;
+    font-size: 1.2rem;
+    background-color: #62564e;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-top: 10px;
+    width: 700px;
+}
+
+.go-review-on:hover{
+    color:  #62564e;
+    background-color:#fde982;
+    border: 2px solid  #62564e;
+
+}
+
+.all-review-board-page {
+    width: 950px;
+    height: 30px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+.page-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #a49d98;
+    background-color: transparent;
+    font-weight: bold;
+    color: #62564e;
+    cursor: pointer;
+  }
+
+  .page-icon {
+    color: #62564e;
+  }
+  
+  .page-btn:focus {
+    outline: none;
+  }
+  
+  .page-btn:hover {
+    background-color: #e9e6db;
+    color: #62564e;
+  }
+  .all-review-sel-page {
+    background-color: #a49d98;
+    color: white;
+  }    

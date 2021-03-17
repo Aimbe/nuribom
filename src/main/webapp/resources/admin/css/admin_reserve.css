@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+.reserve_header{
+    background-color: #aab65d;
+    width: 1500px;
+    height: 40px;
+    
+}
+.reserve_header_text{
+     display: inline-block;
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2em;
+    margin-left: 0px;
+    font-weight: 550;
+    vertical-align: middle;
+       border: 1px solid transparent;
+    
+}
+.size_small{
+	    font-size: 0.7em;
+}
+.reserve_header_id{
+    margin-left: 10px;
+}
+.reserve_header_member_name{
+       margin-left: 90px;
+}
+.reserve_header_center_name{
+      margin-left: 113px;
+}
+.reserve_header_center_cate{ 
+      margin-left: 160px;
+}
+.reserve_header_reserve_day{
+/*      margin-left: 112px;*/
+      margin-left: 165px;
+}
+.reserve_header_reserve_time{
+      margin-left: 190px;
+}
+.reserve_header_reserve_visit{
+      margin-left: 98px;
+}
+.reserve_header_reserve_review{
+      margin-left: 98px;
+}
+
+/*//예약 정보*/
+.reserve_log{
+  width: 1520px;
+    
+}
+.reserve_log_text{
+     display: inline-block;
+    color: black;
+    margin-top: 0px;
+    font-size: 1.2em;
+    font-weight: 450;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    margin-left: 5px;
+}
+.reserve_log_id{
+    width: 172px;
+}
+.reserve_log_member_name{
+     width: 166px;
+}
+.reserve_log_center_name{
+     width: 212px;
+}
+.reserve_log_center_cate{ 
+     width: 188px;
+}
+.reserve_log_reserve_day{
+    width: 247px;
+}
+.reserve_log_reserve_time{
+    width: 172px;
+}
+.reserve_log_reserve_visit{
+    width: 172px;
+}
+
+.reserve_log_reserve_review {
+    width: 100px;
+}
+
+.deleteButton{
+    border: 0px solid  #aab65d;
+    font-size: 1.5em;
+    background-color: rgba(0,0,0,0);
+    color:  #aab65d;
+    margin-left: 50px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"]{
+    margin-left: 10px;
+    width: 100px;
+}
+.admin_reserve_search{
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    margin-left: 10px;
+    width: 100px;
+}input[type="text"].search_reserve_center_name{
+    margin-left: 10px;
+    width: 150px;
+}
+input[type="date"]{
+    margin-left: 10px;
+    width: 160px;
+}
+.search_center_cate{
+    margin-left: 10px;
+    width: 110px;
+}
+input[type="submit"]{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color:  #aab65d;
+    color: white;
+    margin-left: 20px;
+}
+.reserve_log_hr{
+ width: 1210px;
+ width: 1495px;
+    margin-left: 4px;
+ border: 0;
+    height: 1px;
+    background: darkgray;
+       margin-bottom: 0px;
+    margin-top: 6px;
+}
+.reserve_log_reserve_day{
+    margin-left: 10px;
+}
+
+
+

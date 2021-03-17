@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- https://mybatis.org/mybatis-3/ko/getting-started.html 설정파일 참고주소 -->
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<typeAliases>
+		<typeAlias type="com.nuriweb.mybom.model.vo.LikeVO" alias="likeVO"/>
+		<typeAlias type="com.nuriweb.mybom.model.vo.virtual.CenterRowVO" alias="centerRowVo"/>
+	</typeAliases>
+
+    <mappers>
+      <mapper resource="mappers/like_mapper.xml"/>
+    </mappers>
+  
+  
+</configuration>

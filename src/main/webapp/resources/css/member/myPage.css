@@ -1,0 +1,11 @@
+div{
+
+    border:1px solid transparent;
+    
+}
+
+.sub-category-list > ul > li {
+    border-bottom: 1px solid transparent;
+
+}
+

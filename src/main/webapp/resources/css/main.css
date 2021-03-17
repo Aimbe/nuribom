@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+/* 로고 폰트 눈누 임베디드가 안되어서요 서버에 올릴 때 저희가 경로 
+   따로 지정해서 올려서 설정해줘야할 거 같아요. 코딩은 일단 폰트 깔아서 했어요.
+Access-Control-Allow-Origin: http://127.0.0.1:5500
+@font-face {
+  font-family: "WandohopeB";
+  src: url("https://github.com/projectnoonnu/noonfonts_20-10/blob/main/WandohopeB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+@font-face {
+  font-family: "Recipekorea";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+
+/*초기화*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  background-color: #f8f7e6;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+div {
+  border: 1px solid transparent;
+  border-collapse: collapse;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  outline: none;
+  border: none;
+}
+
+/*header*/
+#header {
+  width: 100%;
+  height: 65px;
+  background-color: #aab65d;
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+}
+
+#header ul a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-container {
+  padding-top: 15px;
+  display: flex;
+}
+
+/*header 좌측 부분*/
+
+.header-container-left {
+  display: flex;
+  width: 400px;
+}
+
+.header-container-left h1 {
+  margin-top: -6px;
+}
+
+.header-container-left ul {
+  display: flex;
+  padding-top: 5px;
+}
+
+.header-container-left > ul > li:nth-child(1)::after,
+.header-container-left > ul > li:nth-child(2)::after {
+  content: "｜";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-container-left ul > li:nth-child(1) {
+  margin-left: 14px;
+}
+
+.logo {
+  font-family: "완도희망체";
+  font-weight: 500;
+  letter-spacing: -0.3rem;
+}
+
+.logo a {
+  font-size: 3.6rem;
+  color: white;
+}
+
+#header .header-container-left ul li a {
+  font-size: 1.7rem;
+}
+
+.header-container-center {
+  width: 472px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-container-center ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5px;
+}
+
+.header-container-center ul > li:nth-child(1)::after {
+  content: "｜";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 22px;
+}
+
+.header-container-center i {
+  margin-right: 10px;
+  color: #fde982;
+}
+
+.header-container-right {
+  width: 448px;
+}
+.header-container-right ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.header-container-right ul li {
+  margin-left: 22px;
+}
+
+.header-container-right i {
+  color: #fde982;
+}
+.select {
+  transition: all 0.6s;
+}
+
+.center-recommend:hover .select {
+  color: white;
+}
+
+#header .header-container-center > ul > li a {
+  transition: all 0.6s;
+}
+
+#header .header-container-center > ul > li:hover a {
+  color: #fde982;
+}
+
+/*알림창*/
+
+.member-bell {
+  position: relative;
+}
+
+.bell-circle {
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: #624c3b;
+  border-radius: 100%;
+  box-sizing: content-box;
+  border: 2px solid #aab65d;
+}
+
+.bell-count {
+  font-size: 0.4rem;
+  margin-left: 4px;
+  padding-top: 3px;
+}
+
+/*알림 클릭시 보일 영역*/
+
+.show-bell::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #eaddc3;
+  position: relative;
+  top: -8px;
+  left: 190px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.show-bell {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: -13px;
+  width: 220px;
+  background-color: #f8f7e6;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  transition: all 0.6s;
+}
+
+.bell-top {
+  position: relative;
+  height: 30px;
+  width: 220px;
+  top: -19px;
+  left: -1px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #eaddc3;
+}
+
+#header .bell-top ul li a,
+#header .bell-top ul li {
+  color: #514943;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.bell-top > ul > li:nth-child(1) {
+  position: absolute;
+  top: 10px;
+  left: -12px;
+}
+
+.bell-top > ul > li:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bell-content {
+  position: relative;
+  top: -19px;
+  left: -1px;
+}
+
+.bell-content ul {
+  display: block;
+  width: 218px;
+  font-size: 1.2rem;
+  margin-left: -6px;
+  margin-top: 10px;
+  list-style-image: url("../images/list-type.png");
+  color: #514943;
+  font-weight: bold;
+}
+
+.bell-content ul li {
+  line-height: 1.6rem;
+}
+
+.bell-time {
+  display: block;
+  position: relative;
+  left: 130px;
+  margin-top: 4px;
+  color: #938a83;
+}
+
+.bell-content ul li::after {
+  content: "";
+  display: block;
+  width: 194px;
+  height: 1px;
+  background-color: #dbd1b8;
+  margin: 10px 0;
+}
+
+.bell-content ul li:last-child::after {
+  content: none;
+}
+
+/*마이페이지 클래스 */
+.member-page {
+  display: block;
+}
+
+/*main*/
+
+#main {
+  width: 100%;
+  min-height: 800px;
+  margin-top: 64px;
+}
+
+/*footer*/
+#footer {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(213, 204, 89, 1) 4.2%,
+    rgba(161, 172, 89, 1) 91.1%
+  );
+}
+
+.footer-container {
+  height: 300px;
+  padding-top: 80px;
+}
+
+.footer-logo {
+  font-size: 4rem;
+  color: white;
+}
+
+.footer h1 {
+  display: block;
+}
+
+.footer-category {
+  height: 70px;
+  padding-top: 20px;
+}
+
+.footer-category ul {
+  display: flex;
+}
+
+.footer-category ul a {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.footer-category ul > li::after {
+  content: "｜";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 10px;
+}
+
+.footer-category ul > li:last-child:after {
+  content: "";
+}
+
+.footer-category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-sns {
+  height: 50px;
+}
+
+.footer-category i {
+  color: white;
+  margin-left: 20px;
+}
+
+.footer-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.5;
+  margin-top: 15px;
+}
+
+.footer-info {
+  display: block;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.first-info {
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+/*사이드 픽스버튼*/
+#side-fix-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: 220px;
+
+  position: absolute;
+  top: 200px;
+  right: 35px;
+  /*  position: fixed;
+top: 200px;
+  right: 35px;
+*/
+}
+
+.side-inner-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: #685547;
+  position: relative;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.home-btn,
+.search-btn,
+.like-btn,
+.scroll-up-btn {
+  padding-top: 11px;
+  color: #faec8e;
+}
+
+.side-inner-btn:hover {
+  background-color: #aab65d;
+}

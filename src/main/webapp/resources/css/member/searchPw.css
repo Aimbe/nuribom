@@ -1,0 +1,122 @@
+div{
+
+    border:1px soliD transparent;
+    
+}
+.warning{
+    color: red;
+    margin-top: 5px;
+}
+.searchPw{
+    margin-top: 100px;
+    text-align: center;
+    width: 400px;
+}
+
+.searchPw > h1 {
+    font-size: 4.0rem;
+    color: #685547;
+}
+
+.searchPw > h2 {
+    font-size: 2.0rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #685547;
+}
+
+.view {
+    display: block;
+    height: 70px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 15px;
+}
+
+.searchPw-form {
+   width: 400px;
+   padding: 0px;
+   border-top: 1px solid #000;
+   
+}
+
+.searchPw-form input{
+    height: 30px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tit{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.input{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.input > input::placeholder{
+    font-size: 70%;
+}
+.number-check > input::placeholder{
+    font-size: 70%;
+}
+
+.input_box {
+    margin-top: 20px;
+
+}
+
+.input_box input {
+    height: 30px;
+    font-size: 1.5rem;
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+.pwQuestion {
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: transparent;
+
+}
+
+.btn_bk{
+    align-items: center;
+    width: 396px;
+    height: 40px;
+    background-color:#685547;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:  #e9e6db;
+    font-size: 1.5rem;
+    border-color: transparent;
+    font-weight: 300;
+}
+
+.btn_bk:hover{
+    color: #685547;
+    background-color: #fde982;;
+  
+}
+
+.warning{
+    display: none;
+}
+#sendPW[disabled] {
+  opacity: 0.6;
+  pointer-events:none;
+
+}

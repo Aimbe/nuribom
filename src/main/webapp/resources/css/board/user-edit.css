@@ -1,0 +1,175 @@
+#standalone-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#editor {
+  height: 500px;
+  width: 798px;
+  background-color: white;
+}
+
+.qu-toolbar.ql-snow {
+  width: 800px;
+}
+
+.buttom-wrap {
+  width: 800px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#saveDelta {
+  outline: none;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 5px;
+  background-color: #aab65d;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.2s;
+  cursor: pointer;
+
+}
+#saveDelta:hover {
+  background-color: #624c3b;
+ }
+
+#saveDelta:disabled{
+	
+  background-color: #afacac;
+	
+}
+.ql-toolbar.ql-snow {
+  background-color: #f5edd3;
+}
+
+.user-title {
+  width: 798px;
+  height: 30px;
+  padding-left: 15px;
+  background-color: transparent;
+  border: 1px solid #a49d98;
+}
+
+.user-title:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+input::-moz-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+input::-o-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder {
+  color: #88827e;
+  font-style: italic;
+}
+
+.user-title:focus {
+  outline: none;
+}
+
+.upload-box {
+  margin-top: 5px;
+}
+
+input[type="file"] {
+  position: relative;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 5px 20px 4px 20px;
+  color: #7b7672;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #88827e;
+  border-radius: 3px;
+  margin-top: 1px;
+}
+.upload {
+  display: inline-block;
+  height: 22px;
+  width: 260px;
+  font-size: 1.6rem;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  border: 1px solid #e2dddb;
+  border-radius: 3px;
+}
+
+.upload-file-name {
+  margin-top: 6px;
+  margin-left: 10px;
+  color: #7b7672;
+}
+
+.pw-box {
+  position: relative;
+  height: 30px;
+}
+
+.pw-label {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 1rem;
+  color: #624c3b;
+}
+
+#user-board-pw {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 5px;
+  left: 74px;
+  border: 1px solid #e2dddb;
+  padding-left: 5px;
+  background-color: #fdfdfd;
+  border-radius: 3px;
+}
+
+#user-board-pw:focus {
+  outline: none;
+}
+
+
+
+.pw-length{
+  display:none;
+  color:#d94040;
+  position: relative;
+  top:8px;
+  left:180px;
+}
+
+
+.free-msg{
+  position: relative;
+  top:34px;
+  left:-100px;
+  color:#d94040;
+
+}

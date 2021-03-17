@@ -1,0 +1,171 @@
+div{
+
+    border:1px soliD transparent;
+    
+}
+
+.warning{
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+.join-member-title{
+    margin-top: 100px;
+    text-align: left;
+    width: 400px;
+}
+
+.join-member-title > h1 {
+    font-size: 4.0rem;
+    color: #685547;
+}
+
+.join-member-title > h2 {
+    font-size: 2.0rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #685547;
+}
+
+.view {
+    display: block;
+    height: 70px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 15px;
+}
+
+.join-member-form {
+   width: 400px;
+   padding: 0px;
+   margin-left: 50px;
+}
+
+.login_wrap{
+    border-top: 1px solid transparent;
+}
+.contents{
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding: 0px;
+}
+.tit{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.input{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.input_box input[type="number"]::-webkit-outer-spin-button, 
+.input_box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input > input::placeholder{
+    font-size: 70%;
+}
+.number-check > input::placeholder{
+    font-size: 70%;
+}
+
+.input_box {
+    margin-top: 20px;
+
+}
+
+.pwQuestion {
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: transparent;
+
+}
+.input_box input {
+    height: 30px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    border: 0px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.timer{
+    float: right;
+    right: 0px; 
+    bottom: 0px; 
+    padding: 10px; 
+}
+.agree_all  {
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.check_skin > span {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.agree_box > li {
+    margin-top: 30px;
+}
+
+.agree_box > ul > li > span {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn_bk{
+    align-items: center;
+    width: 396px;
+    height: 40px;
+    background-color: #fde982;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #685547;
+    font-size: 1.5rem;
+    border-color: transparent;
+    font-weight: 300;
+}
+
+.btn_bk:hover{
+    color: #eaddc3;
+    background-color: #685547;
+  
+}
+
+
+.save_btns{
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+.logout_btn > button{
+    margin-left: 200px;
+    margin-top: 0px;
+    background-color: transparent;
+    border: 2px solid #685547;;
+}
+
+.warning{
+    display: none;
+}
+
+#changeBtn[disabled] {
+  opacity: 0.6;
+  pointer-events:none;
+
+}

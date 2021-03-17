@@ -1,0 +1,52 @@
+div{
+
+    border:1px soliD transparent;
+    
+}
+
+.main-join-success{
+    margin-top: 200px;
+    text-align: center;
+    width: 500px;
+    border-bottom: 1px solid #685547;
+}
+
+.main-join-success > h1 {
+    font-size: 4.0rem;
+    color: #685547;
+}
+
+.main-join-success > h2 {
+    font-size: 2.0rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #685547;
+}
+
+.go_login {
+    float: left;
+
+}
+.go_home {
+    float: right;
+}
+
+
+
+.go_login > input, .go_home > input{
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color:  #fde982;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #685547;
+    font-size: 1.5rem;
+    font-style: bold;
+    border-color: transparent;
+}
+
+.go_login > input:hover, .go_home > input:hover{
+    color: #f8f7e6;
+    background-color: #685547;
+}

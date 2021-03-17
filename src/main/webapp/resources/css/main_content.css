@@ -1,0 +1,364 @@
+.main-visual {
+  width: 100%;
+  height: 550px;
+  background-image: url("../images/visual_background.png");
+  background-repeat: repeat;
+}
+
+.visual-container {
+  height: 550px;
+  background-image: url("../images/visual_main_img_final.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.visual-ment-box {
+  margin-left: 52px;
+  margin-top: 140px;
+}
+
+.visual-main-ment {
+  font-family: "Recipekorea";
+  font-size: 4.2rem;
+  line-height: 56px;
+  color: #ee8f4e;
+}
+
+.visual-sub-ment {
+  font-size: 2rem;
+  color: #62564e;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
+}
+
+.under-line {
+  font-size: 2rem;
+  border-bottom: 1px solid #62564e;
+}
+
+.recommend-box {
+  height: 600px;
+}
+
+.recommend-box h2 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2rem;
+  color: #4e4035;
+  font-weight: normal;
+  line-height: 4.1rem;
+}
+
+.recommend-highlight {
+  font-size: 3.8rem;
+  font-weight: bold;
+  border-bottom: 3px solid #4e4035;
+}
+
+/*slick-box*/
+
+.center-container-box {
+  position: relative;
+}
+
+.recommend-slick {
+  position: absolute;
+  margin: 40px auto 0 auto;
+  width: 90%;
+}
+
+.center-item {
+  height: 285px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(213, 204, 89, 1) 4.2%,
+    rgba(161, 172, 89, 1) 91.1%
+  );
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.recommend-slick div:last-child {
+  margin-left: 0px;
+}
+
+.arrow {
+  color: #685547;
+  border-radius: 100%;
+  background-color: #eaddc3;
+  transition: all 0.2s;
+}
+
+.arrow:hover {
+  color: #eaddc3;
+  background-color: #685547;
+}
+
+.slick-arrow-left {
+  position: absolute;
+  top: 175px;
+  left: 20px;
+}
+
+.slick-arrow-right {
+  position: absolute;
+  top: 175px;
+  right: 20px;
+}
+
+.center-img {
+  width: 100%;
+  height: 200px;
+}
+
+.center-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #342d28;
+  margin-top: 20px;
+}
+
+.review-heart {
+  text-align: center;
+  margin-top: 7px;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 239, 127, 1) 0%,
+    rgba(248, 205, 102, 1) 94.9%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -ms-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+}
+
+/*누리봄스토리*/
+.story-box {
+  width: 100%;
+  height: 550px;
+  background-color: #f5ee9e;
+}
+
+.story-container {
+  height: 550px;
+  position: relative;
+}
+.story-backgound-img {
+  margin-left: 200px;
+}
+
+.story-ment {
+  position: absolute;
+  top: 94px;
+  left: 65px;
+  color: #62564e;
+}
+
+.story-main-ment,
+.story-space-letter {
+  font-size: 2.1rem;
+  font-weight: normal;
+  line-height: 3.6rem;
+}
+
+.stroy-nuribom {
+  font-size: 5.9rem;
+  font-family: "완도희망체";
+  letter-spacing: -0.4rem;
+}
+
+.movement-story-page {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(213, 204, 89, 1) 4.2%,
+    rgba(161, 172, 89, 1) 91.1%
+  );
+
+  border-radius: 10px;
+  text-align: center;
+  font-family: "완도희망체";
+  font-size: 2.6rem;
+  color: #fff798;
+  padding-top: 10px;
+  margin-top: 17px;
+}
+
+.main-bottom-board {
+  height: 865px;
+}
+
+/*게시판*/
+
+.today-board {
+  grid-area: td;
+  background-color: #f5ecd1;
+  background-image: url("../images/today-background.png");
+  position: relative;
+}
+
+.question-board {
+  grid-area: qt;
+  background-color: #f6ef99;
+  background-image: url("../images/que_background.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.call-board {
+  grid-area: call;
+  background-color: #aab65d;
+  background-image: url("../images/call_background.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.board-grid-box {
+  width: 1160px;
+  height: 600px;
+  margin: 120px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "td qt"
+    "td call";
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.today-board > h3 {
+  font-size: 3.6rem;
+  color: #869334;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.today-board > h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #63574d;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.today-line {
+  position: absolute;
+  left: 250px;
+  top: 170px;
+  display: inline-block;
+  width: 65px;
+  height: 1px;
+  background-color: #4e4035;
+}
+
+ul.today-board-list {
+  position: absolute;
+  top: 230px;
+  left: 60px;
+  list-style-type: disc;
+}
+
+ul.today-board-list li {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+
+ul.today-board-list li > a {
+  font-size: 1.6rem;
+  color: #4e4035;
+}
+
+ul.today-board-list li > a:hover {
+  border-bottom: 1px solid #4e4035;
+}
+.today-board-date {
+  font-size: 1.4rem;
+  color: #7f7872;
+  position:relative;
+  top:-3px;
+  padding-top: 3px;
+}
+
+.today-board-all-view {
+  display: inline-block;
+  position: absolute;
+  bottom: 65px;
+  right: 50px;
+  width: 75px;
+  height: 23px;
+  background-color: #cdc0a8;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 7px;
+  font-weight: bold;
+  color: #8c8474;
+  transition: all 0.2s;
+}
+
+.today-board-all-view:hover {
+  color: #cdc0a8;
+  background-color: #8c8474;
+}
+
+.question-board > a,
+.call-board > a {
+  display: block;
+  width: inherit;
+  height: 180px;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.call-board > h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: rgb(242, 232, 122);
+}
+
+.question-board > h3 {
+  color: rgb(162, 169, 83);
+  font-size: 2.4rem;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.question-board > h4,
+.question-board > h4 > b,
+.call-board > h4,
+.call-board > h4 > b {
+  font-size: 1.8rem;
+  padding-top: 8px;
+  color: #4e4035;
+}
+.question-board > h4,
+.call-board > h4 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.question-board > h4 {
+  bottom: 47px;
+  left: 165px;
+}
+
+.question-board > h4 > b {
+  font-weight: 700;
+}
+
+.call-color {
+  background-color: rgb(162, 174, 83);
+}

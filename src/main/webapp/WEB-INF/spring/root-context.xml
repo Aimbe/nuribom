@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+	<import resource="dataSource/dbcp_ds.xml"/>
+	
+	<!--  JDBCTemplate bean 수동 등록 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ds" /> 
+	</bean>
+	
+	<bean class="com.nuriweb.mybom.model.dao.impl.VisitorMySqlDAOImpl">
+		<property name ="dataSource" ref="ds"/>
+	</bean>
+		
+	<!-- mybatis 관련 등록 -->
+	<bean id="mybatisFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="ds"/>
+		<property name="configLocation" value="classpath:mybatis_config.xml" />
+	</bean>
+	
+	<bean id="sstem" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="mybatisFactory" />
+	</bean>		
+		
+		
+		<!-- Gmail -->
+  <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+    <property name="host" value="smtp.gmail.com" />
+    <property name="port" value="587" />
+    <property name="username" value="nuribom2021@gmail.com" />
+    <property name="password" value="2021nuribom" />
+    <property name="javaMailProperties">
+    <props>
+      <prop key="mail.smtp.auth">true</prop>
+      <prop key="mail.smtp.starttls.enable">true</prop>
+    </props>
+    </property>
+  </bean>		
+		
+</beans>
