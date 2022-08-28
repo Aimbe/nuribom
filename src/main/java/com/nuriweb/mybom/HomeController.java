@@ -22,7 +22,7 @@ import com.nuriweb.mybom.service.inf.IBoardSVC;
  */
 @Controller
 public class HomeController {
-	
+	//프로젝트 구조 피드백 
 	@Autowired
 	IBoardSVC bdSvc;
 	
